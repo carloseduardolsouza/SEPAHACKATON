@@ -1,9 +1,17 @@
-import './App.css';
+import "./App.css";
 
+//Telas
+import Login from "./screens/Login/Login";
+
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      <h1>Sepa</h1>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Login />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
